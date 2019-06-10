@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mloine.auth.auths.dao.UserLoginInfoMapper">
+  <resultMap id="BaseResultMap" type="com.mloine.auth.auths.entity.UserLoginInfo">
+    <result column="user_id" jdbcType="BIGINT" property="userId" />
+    <result column="e_code" jdbcType="VARCHAR" property="eCode" />
+    <result column="um_code" jdbcType="VARCHAR" property="umCode" />
+    <result column="card_type" jdbcType="VARCHAR" property="cardType" />
+    <result column="card_no" jdbcType="VARCHAR" property="cardNo" />
+    <result column="user_name" jdbcType="VARCHAR" property="userName" />
+    <result column="user_status" jdbcType="VARCHAR" property="userStatus" />
+    <result column="valid_time" jdbcType="TIMESTAMP" property="validTime" />
+    <result column="Invalid_time" jdbcType="TIMESTAMP" property="invalidTime" />
+    <result column="batch_no" jdbcType="VARCHAR" property="batchNo" />
+    <result column="class_type" jdbcType="VARCHAR" property="classType" />
+    <result column="class_no" jdbcType="VARCHAR" property="classNo" />
+    <result column="class_manager_code" jdbcType="VARCHAR" property="classManagerCode" />
+    <result column="class_manager_name" jdbcType="VARCHAR" property="classManagerName" />
+    <result column="class_name" jdbcType="VARCHAR" property="className" />
+    <result column="password_update" jdbcType="TIMESTAMP" property="passwordUpdate" />
+    <result column="password" jdbcType="VARCHAR" property="password" />
+    <result column="experience_level" jdbcType="VARCHAR" property="experienceLevel" />
+    <result column="experience_value" jdbcType="VARCHAR" property="experienceValue" />
+    <result column="area_code" jdbcType="VARCHAR" property="areaCode" />
+    <result column="area_name" jdbcType="VARCHAR" property="areaName" />
+    <result column="remark1" jdbcType="VARCHAR" property="remark1" />
+    <result column="remark2" jdbcType="VARCHAR" property="remark2" />
+    <result column="remark3" jdbcType="TIMESTAMP" property="remark3" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="create_user_code" jdbcType="VARCHAR" property="createUserCode" />
+    <result column="create_user_name" jdbcType="VARCHAR" property="createUserName" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="update_user_code" jdbcType="VARCHAR" property="updateUserCode" />
+    <result column="update_user_name" jdbcType="VARCHAR" property="updateUserName" />
+    <result column="fail_count" jdbcType="INTEGER" property="failCount" />
+    <result column="last_login_time" jdbcType="TIMESTAMP" property="lastLoginTime" />
+    <result column="head_image_path" jdbcType="VARCHAR" property="headImagePath" />
+  </resultMap>
+
+  <resultMap id="BaseResultVOMap" type="com.mloine.auth.auths.entity.UserInfoVO" extends="BaseResultMap">
+    <result column="role_name" jdbcType="VARCHAR" property="roleName" />
+    <result column="role_code" jdbcType="BIGINT" property="roleId" />
+  </resultMap>
+
+
+</mapper>

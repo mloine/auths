@@ -1,4 +1,4 @@
-package com.mloine.auth.auths.service;
+package com.mloine.auth.auths.service.impl;
 
 import com.mloine.auth.auths.entity.User;
 

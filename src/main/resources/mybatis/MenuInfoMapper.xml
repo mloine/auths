@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mloine.auth.auths.dao.MenuInfoMapper">
+  <resultMap id="BaseResultMap" type="com.mloine.auth.auths.entity.MenuInfo">
+    <result column="menu_id" jdbcType="BIGINT" property="menuId" />
+    <result column="menu_name" jdbcType="VARCHAR" property="menuName" />
+    <result column="menu_url" jdbcType="VARCHAR" property="menuUrl" />
+    <result column="menu_permissions" jdbcType="VARCHAR" property="menuPermissions" />
+    <result column="menu_level" jdbcType="VARCHAR" property="menuLevel" />
+    <result column="parent_id" jdbcType="BIGINT" property="parentId" />
+    <result column="menu_status" jdbcType="VARCHAR" property="menuStatus" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="create_user_name" jdbcType="VARCHAR" property="createUserName" />
+    <result column="create_user_code" jdbcType="VARCHAR" property="createUserCode" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="update_user_name" jdbcType="VARCHAR" property="updateUserName" />
+    <result column="update_user_code" jdbcType="VARCHAR" property="updateUserCode" />
+    <result column="remark1" jdbcType="VARCHAR" property="remark1" />
+    <result column="remark2" jdbcType="VARCHAR" property="remark2" />
+    <result column="remark3" jdbcType="TIMESTAMP" property="remark3" />
+  </resultMap>
+</mapper>

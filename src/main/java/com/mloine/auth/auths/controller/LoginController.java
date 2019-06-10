@@ -1,7 +1,7 @@
 package com.mloine.auth.auths.controller;
 
 import com.mloine.auth.auths.entity.User;
-import com.mloine.auth.auths.service.LoginService;
+import com.mloine.auth.auths.service.impl.LoginService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -26,8 +26,8 @@ public class LoginController {
     }
 
     @RequestMapping(value = "/login")
-    public void doLogin(String userName,String pwd){
-
+    public String doLogin(String userName,String pwd){
+        return "sucees";
     }
 
 }

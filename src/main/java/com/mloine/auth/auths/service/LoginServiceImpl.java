@@ -1,8 +1,8 @@
-package com.mloine.auth.auths.service.impl;
+package com.mloine.auth.auths.service;
 
 import com.mloine.auth.auths.dao.LoginMapper;
 import com.mloine.auth.auths.entity.User;
-import com.mloine.auth.auths.service.LoginService;
+import com.mloine.auth.auths.service.impl.LoginService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
