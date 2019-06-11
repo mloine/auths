@@ -22,6 +22,8 @@ public class DoSomethingOneController {
     @GetMapping("/role1")
     @RequiresPermissions({ "class-score:list" })
     public String role1(){
+
+        System.out.println ("111111111111111");
         return "有次权限 class-score:list";
     }
 

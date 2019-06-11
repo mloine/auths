@@ -21,9 +21,11 @@ import java.lang.reflect.Method;
  *      例子：@AuthPermissions(value={"mloine"},type = "pc端登录")
  * @Author:mloine
  * @Date：2019/6/1110:09
+ *
+ * 和interceptor 有差距 不建议使用 会报错 - -
  **/
-@Component
-@Aspect
+//@Component
+//@Aspect
 public class AuthAop {
 
     @Before(value="@annotation(com.mloine.auth.auths.aop.AuthPermissions)")
