@@ -1,5 +1,6 @@
 package com.mloine.auth.auths.controller;
 
+import com.mloine.auth.auths.aop.AuthPermissions;
 import io.swagger.annotations.Api;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,6 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping(value = "/role")
 public class DoSomethingOneController {
 
+    @AuthPermissions(value={"mloine"},type = "pc端登录")
     @GetMapping("/role1")
     @RequiresPermissions({ "class-score:list" })
     public String role1(){

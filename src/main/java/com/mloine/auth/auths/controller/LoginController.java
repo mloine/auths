@@ -5,6 +5,7 @@ import com.mloine.auth.auths.service.impl.LoginService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -25,7 +26,7 @@ public class LoginController {
         return "success mloine! 2019 06 06" + userById.toString () ;
     }
 
-    @RequestMapping(value = "/login")
+    @RequestMapping(value = "/login",method = RequestMethod.GET )
     public String doLogin(String userName,String pwd){
         return "sucees";
     }

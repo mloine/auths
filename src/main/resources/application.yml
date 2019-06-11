@@ -23,7 +23,7 @@ spring:
           namespace: jkg
 
 shiro:
-    enabled: true
+    enabled: false
 
 mybatis:
     mapper-locations: classpath:mybatis/*.xml
